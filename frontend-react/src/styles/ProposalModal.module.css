@@ -1,0 +1,143 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background: linear-gradient(135deg, #6b6bff 0%, #3628a0 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.proposalTitle {
+  color: #6b6bff;
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.proposalText {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fafafa;
+  line-height: 1.8;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.proposalText p {
+  margin: 0.5rem 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem 2rem;
+  align-items: center;
+}
+
+.copyBtn {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.copyBtn:hover {
+  background: #d0d0d0;
+}
+
+.copyBtn:active {
+  background: #c0c0c0;
+}
+
+.closeBtn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.closeBtn:hover {
+  background: #cc3333;
+}
+
+.closeBtn:active {
+  background: #aa2222;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    max-width: 95%;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .actions {
+    padding: 1rem 1.5rem 1.5rem;
+  }
+}
+

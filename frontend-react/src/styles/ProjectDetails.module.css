@@ -1,0 +1,215 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f5f6fa;
+  min-height: calc(100vh - 60px);
+}
+
+.overviewCard {
+  background: linear-gradient(135deg, #6b6bff 0%, #3628a0 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.overviewCard h1 {
+  margin: 0 0 0.75rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.postedInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.accentBar {
+  width: 4px;
+  height: 24px;
+  background: #6b6bff;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.sectionContent {
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTag {
+  background: #6b6bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.detailCard {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.detailValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.detailLabel {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.matchingCard {
+  background: #c2f4c7;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.statusBadge.open {
+  background: #c2f4c7;
+  color: #2d5016;
+}
+
+.statusBadge.closed {
+  background: #fcb1b1;
+  color: #7a1a1a;
+}
+
+.statusBadge.inprogress {
+  background: #ffe59e;
+  color: #6b4f00;
+}
+
+.proposalBtn {
+  background: linear-gradient(135deg, #6b6bff 0%, #3628a0 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proposalBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(107, 107, 255, 0.3);
+}
+
+.proposalBtn:active {
+  transform: translateY(0);
+}
+
+.backBtn {
+  background: transparent;
+  color: #6b6bff;
+  border: 2px solid #6b6bff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  background: #6b6bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .overviewCard {
+    padding: 1.5rem;
+  }
+
+  .overviewCard h1 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .detailsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proposalBtn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}
+

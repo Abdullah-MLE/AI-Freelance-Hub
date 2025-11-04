@@ -1,0 +1,57 @@
+.wrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper h2 {
+  margin-bottom: 0.5rem;
+}
+
+.wrapper p {
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.create {
+  background: linear-gradient(90deg, #6b6bff, #8a73ff);
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit {
+  background: #f0f1f6;
+  color: #333;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.view {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+  }
+  .actions button {
+    flex: 1;
+  }
+}
